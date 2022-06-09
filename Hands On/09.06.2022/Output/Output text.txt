@@ -1,0 +1,114 @@
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+1
+Enter name of the Book u wanna add : AAA
+New Book Found ,Book added successfully
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+1
+Enter name of the Book u wanna add : AAA
+AAA is already existing so count of AAA increase by 2
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+1
+Enter name of the Book u wanna add : BBB
+New Book Found ,Book added successfully
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+1
+Enter name of the Book u wanna add : BBB
+BBB is already existing so count of BBB increase by 2
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+1
+Enter name of the Book u wanna add : CCC
+New Book Found ,Book added successfully
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+2
+Bookname = AAA / Available count = (2)
+Bookname = BBB / Available count = (2)
+Bookname = CCC / Available count = (1)
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+3
+Enter name of the Book u wanna Borrow : AAA
+You have borrowed AAA book , available count is 1
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+3
+You already Borrowed a book Return it First
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+4
+Enter name of the Book u wanna return :
+ABC
+You are returning Wrong book
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+4
+Enter name of the Book u wanna return :
+AAA
+ThankYou for returning AAA book , available count is 2
+Do u wanna Continue
+Y
+Enter 1 to add book
+Enter 2 to View available books
+Enter 3 to borrow book
+Enter 4 to return book
+Enter 5 to Quit
+5
+Thanks for using DigiLibrary
+Do u wanna Continue
+
+D:\DISK-B\.NET\dotnet\Test\bin\Debug\net6.0\Test.exe (process 22148) exited with code -1073741510.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .

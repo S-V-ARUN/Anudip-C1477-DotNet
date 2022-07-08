@@ -1,0 +1,15 @@
+1.)
+
+Define a class called Library with the following description : Instance variables/data members :  int acc_num — stores the accession number of the book String title — stores the title of the book String author — stores the name of the author  Member methods:  (i) void input ( ) — To input and store the accession number, title and author.  (ii) void compute ( ) — To accept the number of days late, calculate the display the fine charged at the rate of Rs. 2 per day.  (iii) void display( ) — To display the details in the following format:  Accession Number Title Author                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+2.)
+
+Create a small database, which will be used to store data about books. For a certain book, we want to keep the following information:
+
+Title
+Author
+The program must be able to store 10  books, and the user will be allowed to:
+
+Add data for one book
+Display all the entered books (just title and author, in the same line)
+Search for the book(s) with a certain title
+Exit the program 

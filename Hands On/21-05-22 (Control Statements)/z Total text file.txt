@@ -1,0 +1,289 @@
+
+// IF ELSE BASED PROGRAMS
+// 1.) write a program to check given number is odd or even
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int num;
+            Console.Write("Enter a number - ");
+            num = int.Parse(Console.ReadLine());
+            if (num % 2 == 0)
+                Console.WriteLine("it is a even number");
+            else
+                Console.WriteLine(" it is a odd number");
+            
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+// 2.) write a given program is divisible by 3 or not
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int num;
+            Console.Write("Enter a number - ");
+            num = int.Parse(Console.ReadLine());
+            if (num % 3 == 0)
+                Console.WriteLine("{0} is divisible by 3",num);
+            else
+                Console.WriteLine("{0} is not divisible by 3", num);
+            
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.)write a program to check positive or negative
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int num;
+            Console.Write("Enter a number - ");
+            num = int.Parse(Console.ReadLine());
+            if (num > 0)
+                Console.WriteLine("{0} is Positive Number",num);
+            else
+                Console.WriteLine("{0} is Negative number", num);
+            
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// 4.)write a program to find biggest among two numbers
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int num1;
+            int num2;
+            Console.Write("Enter a number - ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter another number - ");
+            num2 = int.Parse(Console.ReadLine());
+            if (num1 > num2)
+                Console.WriteLine("{0} is greater than {1}",num1,num2);
+            else
+                Console.WriteLine("{0} is greater than {1}", num2,num1);
+            
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.) write a program to check giver character is vowel or not
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            char wrd1;
+            
+            Console.Write("Enter a number - ");
+            wrd1 = char.Parse(Console.ReadLine());
+            
+            if (wrd1=='a' || wrd1=='e' || wrd1 == 'i'|| wrd1 == 'o' || wrd1 == 'u' 
+                || wrd1 == 'A' || wrd1 == 'E' || wrd1 == 'I' || wrd1 == 'O' || wrd1 == 'U')
+
+                Console.WriteLine("{0} is a vowel",wrd1);
+            else
+                Console.WriteLine("{0} is not a vowel", wrd1);
+            
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// ELSE IF BASED PROGRAMES
+
+// 1.) greates among 3 numbers
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int n1,n2,n3;
+            
+            Console.Write("Enter first number - ");
+            n1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter second number - ");
+            n2 = int.Parse(Console.ReadLine()); 
+            Console.Write("Enter third number - ");
+            n3 = int.Parse(Console.ReadLine());
+
+            if (n1>n2 && n1>n3)
+                Console.WriteLine("{0} is greater than {1} and {2} ",n1,n2,n3);
+           else if (n2>n3) 
+                Console.WriteLine("{0} is greater than {1} and {2} ",n2,n1,n3);
+            else
+                Console.WriteLine("{0} is greater than {1} and {2} ", n3, n1, n2);
+            
+        }
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 2.) program to print ice ,water or steam state
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int temp;
+            
+            Console.Write("Enter temperature - ");
+            temp = int.Parse(Console.ReadLine());
+            
+
+           if (temp == 0)
+                Console.WriteLine("It is in Ice state ");
+           else if (temp>0 && temp<100) 
+                Console.WriteLine(" It is in Water State ");
+           else
+                Console.WriteLine(" It is in steam state ");
+            
+        }
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.) Program to print first class,second class,third class ,pass or fail in exam
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New_Project1
+
+{
+  class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int mark;
+            
+            Console.Write("Enter Mark for 100 - ");
+            mark = int.Parse(Console.ReadLine());
+
+
+            if (mark > 80)
+                Console.WriteLine(" Congratulation You cleared with first class ");
+            else if (mark <= 80 && mark > 70)
+                Console.WriteLine(" You cleared with Second class ");
+            else if (mark <= 70 && mark > 60)
+                Console.WriteLine(" You cleared with Third class ");
+            else if (mark <= 60 && mark >= 50)
+                Console.WriteLine(" You passed the exam ");
+            else
+                Console.WriteLine(" Sorry :( You failed the exam . Better Luck next time ");
+            
+        }
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

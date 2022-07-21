@@ -1,0 +1,3 @@
+Create an application that allows the user to enter a number in the textbox named
+"getnum‟. Check whether the number in the textbox "getnum‟ is palindrome or not. Print the
+message accordingly in the label control named lbldisplay when the user clicks on the button "check‟

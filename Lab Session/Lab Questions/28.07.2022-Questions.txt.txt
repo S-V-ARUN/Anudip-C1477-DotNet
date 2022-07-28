@@ -1,0 +1,9 @@
+Lab Assignment 1: Create an application which will ask the user to input his name and a message, display the two items concatenated in a label, and change the format of the label using radio buttonsand check boxes for selection , the user can make the label text bold ,underlined or italic and change its color . include buttons to display the message in the label, clear the text boxes and label and exit
+
+Lab Assignment 2: Create a project that calculates the total of fat, carbohydrate and protein. Allow the
+user to enter into text boxes. The grams of fat, grams of carbohydrate and grams of protein. Display the total calories of the current food item in a label
+
+Lab Assignment 3: List of employees is available in listbox. Write an application to add selected  item from listbox (assume multi-line property of textbox is true).
+
+Lab Assignment 4:  web server control in asp.net
+Program: Hyperlink, Linkbutton and Calendar controls from toolbox.

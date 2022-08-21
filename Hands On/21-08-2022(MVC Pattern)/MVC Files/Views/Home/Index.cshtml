@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<html>
+<body>
+    @model  MVCtraining.Models.SimpleCalc
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {  
+     <div>
+        <br/>
+        <br/>
+        <h1 style="color : chocolate ; font-weight : bold">Palindrome or Not</h1>
+        <br/>
+
+        <label>Enter Number to Check : </label>
+        @Html.Editor("firNUmber")
+        <br/>
+        <input type="submit" value="Check" />
+         <br/>
+         <br/>
+       <p style="font-size : x-large ;font-weight : bolder ;color : midnightblue"> @Html.Display("Result")</p>
+        <br/>
+    </div>
+   
+    }
+</body>
+</html>

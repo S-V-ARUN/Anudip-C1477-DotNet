@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <body>
+        @model WebCalculator.Models.WebCalc
+        @using (Html.BeginForm("Index","WC",FormMethod.Post)){
+
+            <div>
+            <br />
+            <br />
+            <h1 style="color :firebrick  ; font-weight : bold">Web Calculator</h1>
+            <br />
+            <label>Enter a Number :     </label>
+            @Html.Editor("FirstNumber")
+            <br />
+            <br/>
+            <label>Enter Another Number : </label>
+            @Html.Editor("SecondNumber")
+            <br/>
+            <br/>
+            <div style>
+                <input style="color : darkred" type="submit" value="Addition" asp-for="calc"/>
+                <input style="color : darkmagenta" type="submit" value="Subtraction" asp-for="calc" />
+                <input style="color : deepskyblue" type="submit" value="Multiplication" asp-for="calc" />
+                <input style="color : limegreen" type="submit" value="Division" asp-for="calc" />
+            </div>
+            <br/>
+             <h3>Result = @Html.Display("Result")</h3>
+           
+
+            </div>
+        }
+    </body>
+</html>

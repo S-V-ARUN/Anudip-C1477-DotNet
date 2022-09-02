@@ -1,0 +1,6 @@
+1. Develope a HTML file using Following Tags
+i) p
+ii) style (attribute) in color,font size, font weight , align
+iii) title
+iv) h1 or h2..... or h6
+v) a

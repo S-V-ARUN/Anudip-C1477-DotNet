@@ -1,115 +1,90 @@
-﻿
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-class BalanceCheck : Exception
+ 
+
+namespace Exception_Handling
 {
-    public BalanceCheck(String mess) : base (mess)
+    class AgeException : Exception
     {
-
-    }
-    
-
-}
-
-
-namespace Test
-{
-    class BankingSystem
-    {
-
-        int balance;
-        public BankingSystem(int balance)
+        public AgeException(string mess) : base(mess)
         {
-           this .balance = balance;
-        }
 
-        int withDraw()
-        {
-            Console.Write("Enter amount to withdraw : ");
-            int amo = int.Parse(Console.ReadLine());
-            balance = balance-amo;
-            return balance;
-        }
-        int deposit()
-        {
-            Console.Write("Enter amount to deposit : ");
-            int amo = int.Parse(Console.ReadLine());
-            balance = balance + amo;
-            return balance;
+ 
 
         }
-        
-        void iCompute()
-
+        public static void AgeCheck(int age)
         {
-            char iCheck = 'y';
-            do
+            if (age < 18)
             {
-                Console.WriteLine("Enter 1 for withdraw : ");
-                Console.WriteLine("Enter 2 for Deposite : ");
-                int choice = int.Parse(Console.ReadLine());
-                switch (choice)
-                {
-                    case 1:
-                        {
-                            try
-                            {
-                                if (balance < 1000)
-                                {
-                                    throw new BalanceCheck("Minimum Balance Reached no more withdraw ");
-                                }
-                                else
-                                {
-                                    int newbal1 = withDraw();
-                                    Console.WriteLine("Withdraw Successfull New Balance is {0}", newbal1);
-                                }
-                            }
-                            catch (BalanceCheck Obj1)
-                            {
-                                Console.WriteLine(Obj1.Message);
-                            }
-                            break;
+                throw new AgeException("Minors not Allowed ");
+            }
+            if (age > 60)
+            {
+                throw new AgeException("Senior Citizens not Allowed");
+            }
 
-                        }
-                    case 2:
-                        {
-                            int newbal2 = deposit();
-                            Console.WriteLine("Deposit Successfull New Balance is {0}", newbal2);
-                            break;
-                        }
-                    default:
-                        {
-                            Console.WriteLine("Thanks for Visiting");
-                            break;
-                        }
-                }
-                Console.Write("Enter y to Continue n to exit : ");
-                iCheck = Char.Parse(Console.ReadLine());
+ 
+
+        }
+    }
+    public class pubentry
+    {
+        string name;
+        int age, count;
+        public pubentry(string name, int age, int count)
+        {
+            this.name = name;
+            this.age = age;
+            this.count = count;
+        }
+        public void generatebill()
+        {
+            try
+            {
+                AgeException.AgeCheck(age);
+                Console.WriteLine("Your Bill : \n");
+                Console.WriteLine("Name : {0} ",name);
+                Console.WriteLine("Your Bill Amount : {0}", count * 20000);
+                Console.WriteLine("Thanks for Booking ;)");
+
+ 
+
 
             }
-            while (iCheck=='y');
+            catch (Exception e)
             {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("See you soon :)");
+            }
+
+ 
+
+        }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Console.Write("Enter Your Name :");
+                string name = Console.ReadLine();
+                Console.Write("Enter Your Age :");
+                int age = int.Parse(Console.ReadLine());
+                Console.Write("Total no of persons :");
+                int count = int.Parse(Console.ReadLine());
+                pubentry p = new pubentry(name,age,count);
+                p.generatebill();
+                Console.ReadLine();
+
+ 
+
 
             }
-        }
-
-        public void doSomething()
-        {
-            iCompute();
-        }
-
-    }
-
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            BankingSystem Obj1 = new BankingSystem(100);
-            Obj1.doSomething();
-         
-            
-            
         }
     }
 }
